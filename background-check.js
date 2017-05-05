@@ -305,6 +305,7 @@
     var css = window.getComputedStyle(obj.el);
 
     // Force no-repeat and padding-box
+    var originalRepeat = obj.el.style.backgroundRepeat
     obj.el.style.backgroundRepeat = 'no-repeat';
     obj.el.style.backgroundOrigin = 'padding-box';
 
@@ -406,6 +407,7 @@
     x += obj.el.getBoundingClientRect().left;
     y += obj.el.getBoundingClientRect().top;
 
+    obj.el.style.backgroundRepeat = originalRepeat;
     return {
       left: Math.floor(x),
       right: Math.floor(x + width),

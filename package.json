@@ -1,6 +1,6 @@
 {
   "name": "background-check",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "main": "background-check.min.js",
   "author": {
     "name" : "Kenneth Cachia",
